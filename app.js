@@ -11,7 +11,10 @@ const items = new vis.DataSet([
 ]);
 
 // Configuration for the Timeline
-const options = {};
+const options = {
+  selectable: true,
+  editable: true
+};
 
 // Create a Timeline
 const timeline = new vis.Timeline(container, items, options);
